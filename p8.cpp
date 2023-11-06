@@ -1,12 +1,17 @@
 #include<iostream>
 using namespace std;
-
+void swap(int &p,int &q)
+{
+	int temp=p;
+	p=q;
+	q=temp;
+	
+}
 int main()
 {
-	float f;
-	cout<<"Enter the Fahrenheit ::"<<endl;
-	cin>>f;
+	int a=10,b=20;
+	cout<<"Addition of a and b is ::"<<a+b<<endl;
 	
-	cout<<"Fahrenheit to Celsius is ::"<<((f-32)*5)/9<<endl;
 	return 0;
 }
+

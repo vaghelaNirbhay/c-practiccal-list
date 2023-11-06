@@ -1,12 +1,18 @@
 #include<iostream>
 using namespace std;
 
+class temp
+{
+	public: 
+		void show();
+};
 int main()
 {
-	int len,bre;
-	cout<<"Enter length and breadth ::"<<endl;
-	cin>>len>>bre;
-	cout<<"Perimeter of Rectangle is ::"<<2*(len+bre)<<endl;
-	cout<<"Area of Rectangle is      ::"<<len*bre<<endl;
+	temp a1;
+	a1.show();
 	return 0;
+}
+void temp :: show()
+{
+	cout<<"This is a c++ program"<<endl;
 }

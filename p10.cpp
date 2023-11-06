@@ -1,18 +1,16 @@
 #include<iostream>
-#include<cmath>
 using namespace std;
-
+float area(float,float PI=3.14);
 int main()
 {
-	float p,t,r,si;
-	cout<<"Enter the Initial Principle:"<<endl;
-	cin>>p;
-	cout<<"Enter the Rate of Intrest :"<<endl;
+	float r;
+	cout<<"Enter the radius :: "<<endl;
 	cin>>r;
-	cout<<"Enter the Number of time interval:"<<endl;
-	cin>>t;
-	si=(p*r*t)/100;
-	cout<<"Simple Intrest is :"<<si;
-	
+	cout<<"Area of circle is ::"<<area(r)<<endl;
 	return 0;
 }
+float area(float r,float PI)
+{
+	return PI*r*r;
+}
+

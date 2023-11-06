@@ -1,11 +1,18 @@
 #include<iostream>
 using namespace std;
-
+void swap(int &p,int &q)
+{
+	int temp=p;
+	p=q;
+	q=temp;
+	
+}
 int main()
 {
-	cout<<"Size of INT is :"<<sizeof(int)<<endl;
-		cout<<"Size of FLOAT is :"<<sizeof(float)<<endl;
-			cout<<"Size of CHAR is :"<<sizeof(char)<<endl;
-				cout<<"Size of DOUBLE is :"<<sizeof(double)<<endl;
+	int a=10,b=20;
+	cout<<"Before sapping a and b is ::"<<a<<" "<<b<<endl;
+	swap(a,b);
+	cout<<"After sapping a and b is ::"<<a<<" "<<b<<endl;
 	return 0;
 }
+

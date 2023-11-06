@@ -1,11 +1,18 @@
 #include<iostream>
 using namespace std;
+class Myclass
+{
+	public:
+		static int staticvar;
+};
+
+int Myclass::staticvar = 100;
 
 int main()
 {
-	char name[10];
-	cout<<"Enter your name   ::"<<endl;
-	cin>>name;
-	cout<<"Your good name is ::"<<name<<endl;
+	cout<<"Static variable value::"<<Myclass::staticvar<<endl;
+	Myclass::staticvar = 200;
+	cout<<"Static variable value::"<<Myclass::staticvar<<endl;
 	return 0;
+	
 }

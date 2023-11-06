@@ -1,19 +1,11 @@
 #include<iostream>
+#include<iomanip>
 using namespace std;
 
 int main()
 {
-	int a[5],i;
+	int a=1234;
 	
-	for(i=0;i<5;i++)
-	{
-		cout<<"Enter any number :: "<<endl;
-		cin>>a[i];
-	}
-	for(i=0;i<5;i++)
-	{
-		if(a[i]<0)
-		cout<<"Negative Number = "<<a[i]<<endl;
-	}
+	cout<<"value of a is ::"<<setw(2)<<a<<endl;
 	return 0;
 }
